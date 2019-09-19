@@ -15,7 +15,8 @@
 <h2>Chapter 3 – Project No. 1</h2>
 </header>
 
-<div id="article 1">
+<section>
+<article>
 <h2>Number Conversions</h2>
 <script>
 	var num = prompt("Please enter a number, any number", 0);
@@ -25,9 +26,9 @@
 	document.write("<p> The number in octal (base 8) is " + num.toString(8) + "</p>");
 	document.write("<p> The number in hexadecimal (base 16) is " + num.toString(16) + "</p>");
 </script>
-</div>
+</article>
 
-<div id="article 2">
+<article>
 <h2>Election Night Results</h2>
 <script>
 	var voteA = prompt("Please the number of votes Andrew Anderson received", 0);
@@ -53,18 +54,19 @@
 	document.write("<br>");
 	document.write("<p>Total votes cast were " + voteTotal + "</p>");
 </script>
-</div>
+</article>
 
-<div id="article 3">
+<article>
 <h2>My Favorite Websites</h2>
 <p><a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank">Data is Beautiful Subreddit</a></p>
 <p><a href="https://www.revolutionspodcast.com/" target="_blank">Revolutions Podcast</a></p>
 <p><a href="https://www.ft.com/" target="_blank">The Financial Times</a></p>
 <p><a href="https://www.twitch.tv/" target="_blank">Twitch</a></p>
-</div>
+</article>
+</section>
 
 <aside>
-<h3 style="text-align:center;">A List of 10 Random Numbers</h3>
+<h3 style="text-align:center";>A List of 10 Random Numbers</h3>
 <script>
 	var rand1 = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
 	var rand2 = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
@@ -82,13 +84,22 @@
 	document.write("</ul>");
 </script>
 <br>
+<p>
 <script>
 	var date = new Date();
-	document.write("<p>Copyright \251 " + date.getFullYear() + " Andy Osorio");
+	document.write("Copyright \251 " + date.getFullYear() + " Andy Osorio");
 </script>
+</p>
 </aside>
 
 <footer>
+<address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717
+<br>
+<script>
+	var date = new Date();
+	document.write("<em>" + date + "</em>");
+</script>
+</address>
 </footer>
 
 </body>
